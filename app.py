@@ -95,6 +95,7 @@ elif pages == "Generate Timetable":
                         profile["additional_subject"]
                     ]
 
+                    # Extract subject abbreviations from selected subjects
                     selected_abbreviations = [sub.split('(')[-1].replace(')', '').strip() for sub in selected_subjects]
 
                     # Function to get the timetable for the selected section
